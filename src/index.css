@@ -10,16 +10,16 @@ body {
 
 .form__container {
   min-height: 100vh;
-  background: linear-gradient(150deg, #6ac3ffe7 0%, #00cb58 100%);
+  background: linear-gradient(150deg, #00b7ffe7 10%, #fffb00 100%);
 }
 .form__container form {
-  background: linear-gradient(150deg,  #92fe9df1 0%, #3d98ffce 100%);
+  background: linear-gradient(150deg, #fffb00 0%, #00b7ffe7 90%);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 20px;
 }
 .form__heading {
-  font-family: "Dancing Script",;
+  font-family: "Dancing Script";
   margin-bottom: 10px;
 }
 .form__button {
@@ -30,5 +30,72 @@ body {
 }
 .table-wrap {
   height: 300px;
-  overflow-y: auto; 
-} 
+  overflow-y: auto;
+  align-items: center;
+}
+
+.nav-item {
+  font-weight: 700;
+  font-size: 21px;
+  margin: -5px;
+  background-color: black;
+  border-radius: 11px;
+  padding: 1px 9px 1px 9px;
+}
+
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* background: #000000; */
+  background: linear-gradient(150deg, #92fe9df1 0%, #3d98ffce 100%);
+}
+
+.Navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(150deg, #fffb00fb 0%, #00b7ffe7 60%);
+  box-shadow: rgba(130, 127, 127, 0.288) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.336) 0px 1px 3px 1px;
+  padding: 20px;
+}
+.Navbar > .nav-logo {
+  font-weight: 700;
+  font-size: 21px;
+  margin: 15px;
+  color: #ffffff;
+}
+
+.Navbar > .nav-items > a {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 20px;
+  position: relative;
+  opacity: 100;
+}
+
+.Navbar > .nav-items > a:hover {
+  opacity: 10;
+}
+
+.Navbar > .nav-items > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: all 0.5s;
+}
+
+.Navbar > .nav-items > a:hover::before {
+  width: 100%;
+}
+
+.Navbar > .nav-toggle {
+  display: none;
+}

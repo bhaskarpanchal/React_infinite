@@ -2,21 +2,20 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "./Pages/LoginPage";
 import HomePage from "./Pages/HomePage";
-// import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <>
       <div className="App">
-      <Routes>
+        <Routes>
           <Route path="/" element={<LoginPage />} />
-        </Routes> 
-        {/* <Header/> */}
+        </Routes>
         <Routes>
           <Route path="/profile" element={<HomePage />} />
         </Routes>
-        </div>
+      </div>
     </>
-  )
-};
+  );
+}
 export default App;
